@@ -1,0 +1,24 @@
+
+plan  0  high speed          
+plan  1  standard speed
+plan  2  higher speed
+
+
+环岛标志位  现场调试    1 -> 0 -> 2 
+加入起跑线 横断后开始检测起跑线 
+
+若出现问题  调速度环
+                   环岛 
+                   大弯
+                   横断前减速
+                   断路减速
+
+起跑线出现问题  调 
+#define jump_point   7   //调变点个数，检测起跑线用   （误判加大  判断不出减小）
+#define jump_point_row 2//检测到多少行满足条件的为起跑线 （误判加大 判断不出减小）  在findline.h文件
+
+若还出现问题  用0716  调高一点速度
+
+
+
+如果出现大问题 看看if 标志位有没有问题
